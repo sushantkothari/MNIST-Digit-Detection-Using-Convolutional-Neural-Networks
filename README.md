@@ -51,8 +51,6 @@ Convolutional Neural Networks are a class of deep neural networks commonly used 
     pip install -r requirements.txt
     ```
 
-### Running the Project
-
 #### Training the Model
 
 1. Ensure your dataset is in the `data/` directory.
