@@ -41,8 +41,8 @@ Convolutional Neural Networks are a class of deep neural networks commonly used 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/digit-detection.git
-    cd digit-detection
+    git clone https://github.com/sushantkothari/mnist-digit-detection-using-conventional-neural-networks.git
+    cd mnist-digit-detection-using-conventional-neural-networks
     ```
 
 2. Install the required packages:
@@ -59,7 +59,7 @@ Convolutional Neural Networks are a class of deep neural networks commonly used 
 2. Open the Jupyter notebook:
 
     ```bash
-    jupyter notebook Untitled34.ipynb
+    jupyter notebook MNIST Digit Detection.ipynb
     ```
 
 3. Follow the steps in the notebook to preprocess the data, train the model, and save the trained weights.
