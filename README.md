@@ -23,9 +23,9 @@ Convolutional Neural Networks are a class of deep neural networks commonly used 
 ## Project Structure
 
 - `best_model.h5`: Pre-trained model weights for the digit detection CNN.
-- `Untitled34.ipynb`: Jupyter notebook containing the implementation, training process, and evaluation.
+- `MNIST Digit Detection.ipynb`: Jupyter notebook containing the implementation, training process, and evaluation.
 - `MNIST_digit.png`: Sample Image for testing.
-- 
+
 ### Requirements
 
 - Python 3.x
