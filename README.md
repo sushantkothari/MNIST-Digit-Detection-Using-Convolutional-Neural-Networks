@@ -92,7 +92,7 @@ Convolutional Neural Networks are a class of deep neural networks commonly used 
 
 # Interactive user input for image path
 
-    ```
+    ```python
     input_image_path = input('Path of the image to be predicted: ')
     predict_image(input_image_path)
 
