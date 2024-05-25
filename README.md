@@ -91,9 +91,10 @@ Convolutional Neural Networks are a class of deep neural networks commonly used 
     print(f'The Handwritten Digit is recognized as {input_pred_label}')
 
 # Interactive user input for image path
-input_image_path = input('Path of the image to be predicted: ')
-predict_image(input_image_path)
+
     ```
+    input_image_path = input('Path of the image to be predicted: ')
+    predict_image(input_image_path)
 
 ## Contributing
 
