@@ -76,22 +76,26 @@ Convolutional Neural Networks are a class of deep neural networks commonly used 
 2. Run inference on sample images:
 
     ```python
-    import cv2
-    import numpy as np
-    from src.utils import preprocess_image, draw_bounding_boxes
+    def predict_image(image_path):
+    # Load and preprocess the image
+    input_image = cv2.imread(image_path)
+    cv2_imshow(input_image)
+    grayscale = cv2.cvtColor(input_image, cv2.COLOR_RGB2GRAY)
+    input_image_resize = cv2.resize(grayscale, (28, 28))
+    input_image_resize = input_image_resize / 255.0
+    image_reshaped = np.reshape(input_image_resize, [1, 28, 28, 1])
 
-    image = cv2.imread('images/sample_digit.jpg')
-    input_image = preprocess_image(image)
-    predictions = model.predict(input_image)
+    # Make prediction
+    input_prediction = model.predict(image_reshaped)
+    input_pred_label = np.argmax(input_prediction)
 
-    output_image = draw_bounding_boxes(image, predictions)
-    cv2.imshow('Detected Digits', output_image)
-    cv2.waitKey(0)
+    # Display the prediction
+    print(f'The Handwritten Digit is recognized as {input_pred_label}')
+
+# Interactive user input for image path
+input_image_path = input('Path of the image to be predicted: ')
+predict_image(input_image_path)
     ```
-
-### Evaluation
-
-Evaluate the model's performance using metrics such as accuracy, precision, recall, and F1 score. The evaluation scripts are provided in the `src/` directory.
 
 ## Contributing
 
